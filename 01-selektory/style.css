@@ -36,3 +36,45 @@ element[attr="val"]		element s attributem o určité hodnotě
 						^= na začátku
 						$= na konci
 */
+
+.box .vnitrek p {
+	background-color: blue;
+}
+
+ul > li {
+	background-color: yellowgreen;
+}
+
+ h2 + p {
+	background-color: black;
+}
+
+h2 ~ p {
+	background-color: green;
+}
+
+[title="Mrkvicka"] {
+	background-color: deeppink;
+}
+
+/*
+[href$=".pdf"] {
+	background-color: red;
+}
+*/
+
+[href$=".pdf"]::before {
+	content: " ";
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: red;
+} 
+
+[href^="http"] {
+	background-color: orange;
+}
+
+[href^="https"] {
+	background-color: violet;
+}
